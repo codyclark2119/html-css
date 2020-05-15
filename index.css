@@ -1,7 +1,9 @@
 /* Global CSS */
-* {
+body {
     background-color: rgb(180, 184, 184);
     font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 main {
@@ -10,9 +12,20 @@ main {
 }
 
 /* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-brand {
+    font-size: 150%;
+    margin: 1% 1% 0 7%;
+}
+
 nav {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-right: 7%;
 }
 
 .nav-item {
@@ -30,20 +43,26 @@ nav {
     color: rgb(71, 73, 73);
 }
 
+.active a {
+    color: whitesmoke;
+}
+
 /* Footer */
 footer {
+    background-color: rgb(180, 184, 184);
     text-align: center;
     position: fixed;
+    padding: 2% 0;
     left: 0px;
     bottom: 0px;
-    height: 50px;
+    height: 25px;
     width: 100%;
 }
 
 /* Index CSS */
 .bio-text {
     font-size: 150%;
-    margin: 0 10% 10% 10%;
+    margin: 0 10% 12% 10%;
 }
 
 .bio-image {
@@ -52,5 +71,71 @@ footer {
 }
 
 .hobby-list {
-    margin: 12% 0 0 7%;
+    margin: 7% 0 0 7%;
+}
+
+
+/* Media Queries */
+/* Tablet */
+@media only screen and (max-width: 850px) {
+    main {
+        margin: 0 auto ;
+        padding-bottom: 15%;
+    }
+    nav{
+        margin-right: 5%;
+    }
+    .nav-brand {
+        margin: 2% 0 0 5%;
+    }
+    .nav-item {
+        margin: auto 15px;
+    }
+    .bio-text{
+        margin-bottom: 2%;
+    }
+    .hobby-list {
+        margin: auto 5%;
+    }
+}
+
+/* Mobile LG */
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 0 5%;
+        padding-bottom: 15%;
+    }
+    nav{
+        margin: 0;
+    }
+    .nav-brand {
+        font-size: 110%;
+        margin-right: 5%;
+    }
+    .nav-item {
+        font-size: 100%;
+        margin: 2%;
+        padding: 2%;
+    }
+    .nav-container {
+        padding: 5%;
+        margin: 0;
+        width: 200px
+    }
+    .bio-text {
+        font-size: 110%;
+        margin: 0 10%;
+    }
+}
+
+/* Mobile SM */
+@media only screen and (max-width: 400px) {
+    .nav-brand {
+        font-size: 100%;
+        margin: 4% 0 0 4%
+    }
+    .bio-image {
+        max-height: 225px;
+        max-width: 225px;
+    }
 }
