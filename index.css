@@ -1,11 +1,12 @@
 /* Global CSS */
 * {
     background-color: rgb(180, 184, 184);
+    font-family: 'Jost', sans-serif;
 }
 
 main {
-    margin: 0;
-    padding: 0;
+    margin: 0 10%;
+    padding: 3% 5%;
 }
 
 /* Navbar */
@@ -27,4 +28,29 @@ nav {
 
 .nav-item a:hover {
     color: rgb(71, 73, 73);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+}
+
+/* Index CSS */
+.bio-text {
+    font-size: 150%;
+    margin: 0 10% 10% 10%;
+}
+
+.bio-image {
+    float: left;
+    margin: 1% 5% 2% 5%;
+}
+
+.hobby-list {
+    margin: 12% 0 0 7%;
 }
