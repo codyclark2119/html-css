@@ -1,4 +1,4 @@
-/* Global CSS */
+/* Global */
 body {
     background-color: rgb(180, 184, 184);
     font-family: 'Jost', sans-serif;
@@ -20,6 +20,11 @@ header {
 .nav-brand {
     font-size: 150%;
     margin: 1% 1% 0 7%;
+}
+
+.nav-brand a {
+    text-decoration: none;
+    color: black;
 }
 
 nav {
@@ -59,7 +64,7 @@ footer {
     width: 100%;
 }
 
-/* Index CSS */
+/* Index */
 .bio-text {
     font-size: 150%;
     margin: 0 10% 12% 10%;
@@ -74,14 +79,53 @@ footer {
     margin: 7% 0 0 7%;
 }
 
+/* Contact */
+form {
+    display: flex;
+    margin: 0 10%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-item {
+    display: flex;
+    width: 75%;
+    margin: .5% 0%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-item label {
+    font-size: 150%;
+    text-decoration: underline;
+}
+
+.form-item input {
+    font-size: 150%;
+    height: 10%;
+    width: 50%;
+    text-align: center;
+}
+
+.form-item textarea {
+    font-size: 150%;
+    width:65%;
+}
+
+form button {
+    width: 30%;
+    margin: 2% 0;
+}
 
 /* Media Queries */
 /* Tablet */
 @media only screen and (max-width: 850px) {
+    /* Global */
     main {
         margin: 0 auto ;
         padding-bottom: 15%;
     }
+    /* Navbar */
     nav{
         margin-right: 5%;
     }
@@ -94,6 +138,7 @@ footer {
     .bio-text{
         margin-bottom: 2%;
     }
+    /* Index CSS */
     .hobby-list {
         margin: auto 5%;
     }
@@ -101,10 +146,12 @@ footer {
 
 /* Mobile LG */
 @media only screen and (max-width: 600px) {
+    /* Global */
     main {
         margin: 0 5%;
         padding-bottom: 15%;
     }
+    /* Navbar */
     nav{
         margin: 0;
     }
@@ -130,10 +177,12 @@ footer {
 
 /* Mobile SM */
 @media only screen and (max-width: 400px) {
+    /* Navbar */
     .nav-brand {
         font-size: 100%;
         margin: 4% 0 0 4%
     }
+    /* Index */
     .bio-image {
         max-height: 225px;
         max-width: 225px;
