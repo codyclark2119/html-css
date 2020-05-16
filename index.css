@@ -67,7 +67,7 @@ footer {
 /* Index */
 .bio-text {
     font-size: 150%;
-    margin: 0 10% 12% 10%;
+    margin: 0 10% 5% 10%;
 }
 
 .bio-image {
@@ -76,7 +76,12 @@ footer {
 }
 
 .hobby-list {
-    margin: 7% 0 0 7%;
+    margin: 13% 0 0 7%;
+}
+
+.hobby-list h3 {
+    width: 13%;
+    text-align: center;
 }
 
 /* Contact */
@@ -95,21 +100,29 @@ form {
     flex-direction: column;
 }
 
+.form-item input:focus {
+    border: 3px solid rgb(180, 184, 184);
+}
+
 .form-item label {
     font-size: 150%;
     text-decoration: underline;
 }
 
 .form-item input {
+    color: whitesmoke;
     font-size: 150%;
     height: 10%;
     width: 50%;
     text-align: center;
+    background-color: rgb(180, 184, 184);
 }
 
 .form-item textarea {
+    color: whitesmoke;
     font-size: 150%;
     width:65%;
+    background-color: rgb(180, 184, 184);
 }
 
 form button {
@@ -118,6 +131,25 @@ form button {
 }
 
 /* Media Queries */
+/* Laptop */
+@media only screen and (max-width: 1100px) {
+    /* Global */
+    nav {
+        margin-bottom: 3%;
+    }
+    /* Index */
+    .bio-text {
+        font-size: 125%;
+        margin: 0 10% 0% 5%;
+    }
+    .hobby-list {
+        margin: 0 0 0 7%;
+    }
+    .hobby-list h3 {
+        width: 28%;
+    }
+}
+
 /* Tablet */
 @media only screen and (max-width: 850px) {
     /* Global */
@@ -136,12 +168,13 @@ form button {
         margin: auto 15px;
     }
     .bio-text{
-        margin-bottom: 2%;
+        margin: 0 3% 0 0;
     }
     /* Index CSS */
     .hobby-list {
         margin: auto 5%;
     }
+    
 }
 
 /* Mobile LG */
@@ -173,14 +206,26 @@ form button {
         font-size: 110%;
         margin: 0 10%;
     }
+    .hobby-list h3 {
+        width: 75%;
+    }
+}
+
+/* Mobile MD */
+@media only screen and (max-width: 375px) {
+    /* Index */
+    .bio-image {
+        max-height: 275px;
+        max-width: 275px;
+    }
 }
 
 /* Mobile SM */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 330px) {
     /* Navbar */
     .nav-brand {
         font-size: 100%;
-        margin: 4% 0 0 4%
+        margin: 3.5% 0 0 3%
     }
     /* Index */
     .bio-image {
