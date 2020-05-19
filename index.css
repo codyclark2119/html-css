@@ -1,4 +1,5 @@
 /* Global */
+
 body {
     background-color: rgb(180, 184, 184);
     font-family: 'Jost', sans-serif;
@@ -7,11 +8,14 @@ body {
 }
 
 main {
-    margin: 0 10%;
-    padding: 3% 5%;
+    padding: 20px;
+    max-width: 1050px;
+    width: 80%;
+    margin: 20px auto;
 }
 
 /* Navbar */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -34,7 +38,7 @@ nav {
 }
 
 .nav-item {
-    display: inline; 
+    display: inline;
     margin: auto 25px;
     font-size: 130%;
 }
@@ -53,6 +57,7 @@ nav {
 }
 
 /* Footer */
+
 footer {
     background-color: rgb(180, 184, 184);
     text-align: center;
@@ -64,7 +69,10 @@ footer {
     width: 100%;
 }
 
+/* End of Global */
+
 /* Index */
+
 .bio-text {
     font-size: 150%;
     margin: 0 10% 5% 10%;
@@ -84,7 +92,10 @@ footer {
     text-align: center;
 }
 
+/* End of Index */
+
 /* Contact */
+
 form {
     display: flex;
     margin: 0 10%;
@@ -121,7 +132,7 @@ form {
 .form-item textarea {
     color: whitesmoke;
     font-size: 150%;
-    width:65%;
+    width: 65%;
     background-color: rgb(180, 184, 184);
 }
 
@@ -130,8 +141,75 @@ form button {
     margin: 2% 0;
 }
 
+/* End of Contact */
+
+/* Gallery */
+.content{
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: auto
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+/* Slideshow container */
+
+.mySlides1, .mySlides2, .mySlides3, .mySlides4 {
+    display: none
+}
+
+.mySlides1 img, .mySlides2 img, .mySlides3 img, .mySlides4 img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+
+.prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* End of Gallery */
+
 /* Media Queries */
+
 /* Laptop */
+
 @media only screen and (max-width: 1100px) {
     /* Global */
     nav {
@@ -151,14 +229,15 @@ form button {
 }
 
 /* Tablet */
+
 @media only screen and (max-width: 850px) {
     /* Global */
     main {
-        margin: 0 auto ;
+        margin: 0 auto;
         padding-bottom: 15%;
     }
     /* Navbar */
-    nav{
+    nav {
         margin-right: 5%;
     }
     .nav-brand {
@@ -167,17 +246,17 @@ form button {
     .nav-item {
         margin: auto 15px;
     }
-    .bio-text{
+    .bio-text {
         margin: 0 3% 0 0;
     }
     /* Index CSS */
     .hobby-list {
         margin: auto 5%;
     }
-    
 }
 
 /* Mobile LG */
+
 @media only screen and (max-width: 600px) {
     /* Global */
     main {
@@ -185,7 +264,7 @@ form button {
         padding-bottom: 15%;
     }
     /* Navbar */
-    nav{
+    nav {
         margin: 0;
     }
     .nav-brand {
@@ -212,6 +291,7 @@ form button {
 }
 
 /* Mobile MD */
+
 @media only screen and (max-width: 375px) {
     /* Index */
     .bio-image {
@@ -221,6 +301,7 @@ form button {
 }
 
 /* Mobile SM */
+
 @media only screen and (max-width: 330px) {
     /* Navbar */
     .nav-brand {
