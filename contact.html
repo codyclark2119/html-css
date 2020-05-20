@@ -1,11 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Cody's Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
+    <header>
+        <span class="nav-brand"><a href="index.html">Cody Clark</a></span>
+        <nav>
+            <ul class="nav-container">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                <li class="nav-item active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="contact-main">
+        <form>
+            <div class="form-item">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Type First Name Here...">
+            </div>
+            <div class="form-item">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Type Last Name Here...">
+            </div>
+            <div class="form-item">
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Type Email Here...">
+            </div>
+            <div class="form-item">
+                <label for="message">Message me:</label>
+                <textarea id="message" name="message" rows="5" cols="10" placeholder="Enter your message..."></textarea>
+            </div>
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        &copy;Cody Clark
+    </footer>
 </body>
+
 </html>
